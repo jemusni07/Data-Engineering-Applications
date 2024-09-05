@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: customers
-    description: One record per customer
+  - name: customers_clean
+    description: One record per customer, cleaned table
     columns:
       - name: customer_id
         description: Primary key
