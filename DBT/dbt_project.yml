@@ -12,17 +12,17 @@ profile: 'default'
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
-model-paths: ["DBT/learn-dbt/models"]
-analysis-paths: ["DBT/learn-dbt/analyses"]
-test-paths: ["DBT/learn-dbt/tests"]
-seed-paths: ["DBT/learn-dbt/seeds"]
-macro-paths: ["DBT/learn-dbt/macros"]
-snapshot-paths: ["DBT/learn-dbt/snapshots"]
+model-paths: ["learn-dbt/models"]
+analysis-paths: ["learn-dbt/analyses"]
+test-paths: ["learn-dbt/tests"]
+seed-paths: ["learn-dbt/seeds"]
+macro-paths: ["learn-dbt/macros"]
+snapshot-paths: ["learn-dbt/snapshots"]
 
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
-  - "DBT/learn-dbt/target"
-  - "DBT/learn-dbt/dbt_packages"
+  - "learn-dbt/target"
+  - "learn-dbt/dbt_packages"
 
 
 # Configuring models
