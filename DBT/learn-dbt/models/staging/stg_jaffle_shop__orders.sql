@@ -1,7 +1,8 @@
 select
     id as order_id,
-    CUSTOMER as customer_id,
-    ordered_at,
+    user_id as customer_id,
+    order_date,
+    status
 
 from {{ source('jaffle_shop', 'orders') }}
 
